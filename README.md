@@ -17,18 +17,6 @@ Add expenses with amount and notes
 Automatically log date and time of each entry
 
 Stores all expenses in a text file (expenses.txt)
-
-Displays:
-
-Total spent
-
-Remaining budget
-
-Category-wise spending summary (with bar chart visualization)
-
-Gives smart suggestions based on spending behaviour
-
-Simple menu-driven interface
 # Technologies / Tools Used
 
 Python 3
@@ -47,15 +35,6 @@ Ensure the script is in the same folder where you want expenses.txt to be create
 
 Open a terminal/command prompt.
 
-Run the script:
-
-python expense_tracker.py
-
-
-Enter your monthly budget.
-
-Choose actions from the menu to add or view expenses.
-
 # Instructions for Testing
 
 Start the program and enter any test budget (e.g., ₹90000).
@@ -72,5 +51,61 @@ Total spending
 
 Remaining budget
 
+# FLOWCHART
+                   ┌────────────────────────┐
+                   │      Start Program     │
+                   └────────────┬───────────┘
+                                │
+                                ▼
+                   ┌────────────────────────┐
+                   │ Ask user for monthly   │
+                   │        budget          │
+                   └────────────┬───────────┘
+                                │
+                                ▼
+                   ┌────────────────────────┐
+                   │   Display Main Menu:   │
+                   │ 1. Add Expense         │
+                   │ 2. View Summary        │
+                   │ 3. Exit                │
+                   └────────────┬───────────┘
+                                │
+                      ┌─────────┼─────────┐
+                      │         │         │
+                      ▼         ▼         ▼
 
-Restart the program and check that expenses are still loaded.
+         ┌────────────────┐   ┌──────────────────┐   ┌────────────────────┐
+         │ 1. Add Expense │   │ 2. View Summary  │   │ 3. Exit Program    │
+         └───────┬────────┘   └──────────┬──────┘   └──────────┬─────────┘
+                 │                       │                     │
+                 ▼                       ▼                     ▼
+
+    ┌──────────────────────┐   ┌───────────────────────┐   ┌────────────────────────┐
+    │ Ask amount spent     │   │ Read all expenses      │   │ Display exit message   │
+    │ Ask note             │   │ from expenses.txt       │   └────────────────────────┘
+    │ Get current time     │   └──────────┬─────────────┘
+    └──────────┬───────────┘              │
+               │                           ▼
+               ▼               ┌──────────────────────────┐
+    ┌──────────────────────┐   │ Calculate total expenses │
+    │ Write expense data    │   │ Calculate remaining     │
+    │ into expenses.txt     │   │ budget                  │
+    └──────────┬───────────┘   └──────────┬──────────────┘
+               │                           │
+               ▼                           ▼
+   ┌────────────────────────┐   ┌──────────────────────────────┐
+   │ Print success message  │   │ Show category-wise spending   │
+   └──────────┬────────────┘   │ Generate bar chart             │
+               │                └──────────┬─────────────────────┘
+               │                           │
+               ▼                           ▼
+       ┌────────────────┐      ┌──────────────────────────────┐
+       │ Return to Menu │◄──── │ Show suggestions              │
+       └────────────────┘      └──────────┬─────────────────────┘
+                                           │
+                                           ▼
+                                 ┌───────────────────┐
+                                 │ Return to Menu    │
+                                 └───────────────────┘
+
+ 
