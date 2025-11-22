@@ -3,7 +3,7 @@ tracks daily expenses and manage budget
 Smart Expense Tracker
 -Project Title
 
-Smart Expense Tracker (Console Version)
+Smart Expense Tracker 
 
 -Overview of the Project
 
