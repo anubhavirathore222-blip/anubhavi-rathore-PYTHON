@@ -1,17 +1,17 @@
 # anubhavi-rathore-PYTHON
 tracks daily expenses and manage budget
 Smart Expense Tracker
-📌 Project Title
+-Project Title
 
 Smart Expense Tracker (Console Version)
 
-📌 Overview of the Project
+-Overview of the Project
 
 This is a simple Python-based console application that helps users track their daily expenses and compare them with their monthly budget.
 The program allows users to add expenses, view summaries, and get automated suggestions based on their spending habits.
 All expenses are stored in a text file so that the user’s data remains saved even after closing the program.
 
-📌 Features
+-Features
 
 Add expenses with amount and notes
 
@@ -31,7 +31,7 @@ Gives smart suggestions based on spending behaviour
 
 Simple menu-driven interface
 
-📌 Technologies / Tools Used
+-Technologies / Tools Used
 
 Python 3
 
@@ -41,7 +41,7 @@ File handling (reading & writing from a text file)
 
 Console-based UI
 
-📌 Steps to Install & Run the Project
+-Steps to Install & Run the Project
 
 Make sure Python 3 is installed on your system.
 
@@ -60,7 +60,7 @@ Enter your monthly budget.
 
 Choose actions from the menu to add or view expenses.
 
-📌 Instructions for Testing
+-Instructions for Testing
 
 Start the program and enter any test budget (e.g., ₹90000).
 
